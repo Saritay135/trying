@@ -1,0 +1,29 @@
+<!-- <script>
+  
+  async function getData() {
+    return "Namaste";
+  }
+ 
+  const data = getData();
+
+  console.log(data);
+
+</script> -->
+
+<script>
+
+  const API_URL = "https://api.github.com/users/palakyadav3";
+
+async function  handlePromise() {
+
+  const data = await fetch(API_URL);
+
+  const jsonValue = await data.json();
+
+  console.log(jsonValue);
+
+}
+
+handlePromise();
+
+</script>
